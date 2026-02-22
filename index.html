@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1024" >
   <title>Ilyn's Personal Blog | WELCOME</title>
   
   <link rel="icon" type="image/jpg" href="images_1000180871.jpg">
@@ -25,12 +25,12 @@
 
     .main-wrapper {
       background-color: rgba(255, 240, 245, 0.94); 
-      max-width: 1000px;
+      width: 1000px;
       margin: 40px auto;
       padding: 30px;
       border: 8px solid #f8bbd0; 
       border-radius: 20px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      
     }
 
     
@@ -63,7 +63,37 @@
       display: block;
       margin: 10px auto;
     }
+/* Navigation Menu Styling */
+.nav-menu {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(248, 187, 208, 0.5); /* Soft Pink Transparent */
+  border-radius: 50px;
+  border: 2px solid #f48fb1;
+}
 
+.nav-menu a {
+  text-decoration: none;
+  color: #ad1457; /* Dark Pink */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.nav-menu a:hover {
+  background-color: #f48fb1; /* Lilac/Pink hover */
+  color: white;
+}
+
+/* This makes the jump smooth instead of a "snap" */
+html {
+  scroll-behavior: smooth;
+}
     
     h1 { 
       font-family: 'Brush Script MT', 'Brush Script Std', cursive; 
@@ -163,10 +193,18 @@
     <img src="imagespic4.jpg" alt="Ilyn 4">
   </div>
 
+  <div class="nav-menu">
+  <a href="#about">About Me</a>
+  <a href="#classmate">Classmate</a>
+  <a href="#destinations">Destinations</a>
+  <a href="#friends">Friends</a>
+  <a href="#goals">Goals</a>
+</div>
+  
   <h1>WELCOME</h1>
   <span class="main-quote">"Laughter is timeless, imagination has no age and dreams are forever" — Walt Disney</span>
 
-  <h2>About Me</h2>
+  <h2 id="about">About Me</h2>
   <span class="disney-phrase">"A dream is a wish your heart makes." — Cinderella</span>
   
   <div class="about-section">
@@ -188,7 +226,7 @@
     <img src="imagesprofile_about.jpg" alt="Ilyn with glasses" class="about-pic">
   </div>
 
-  <h2>Meet My Classmate</h2>
+  <h2 id="classmate">Meet My Classmate</h2>
   <span class="disney-phrase">"Believe you can, then you will." — Mulan</span>
   <div class="center-content">
     <p>I would like to introduce you to my classmate, <strong>Lizaan Hall</strong>.</p>
@@ -196,7 +234,7 @@
     <p>✨ Click her photo to visit her blog! ✨</p>
       </div>
 
-  <h2>My Dream Destinations</h2>
+  <h2 id="destinations">My Dream Destinations</h2>
   <span class="disney-phrase">"The past can hurt. But the way I see it, you can either run from it, or learn from it." — The Lion King</span>
   <ul>
     <li><strong>Paris, France:</strong> To experience the art, museums, and iconic landmarks.</li>
@@ -204,7 +242,7 @@
     <li><strong>New York City, USA:</strong> To immerse myself in city life and explore tourism attractions.</li>
   </ul>
 
-  <h2>My Friends</h2>
+  <h2 id="friends">My Friends</h2>
   <span class="disney-phrase">"You're braver than you believe, stronger than you seem, and smarter than you think." — Winnie the Pooh</span>
   <p>Life is better with friends. Meet my "Ride or Die":</p>
   <div class="horizontal-collage">
@@ -215,7 +253,7 @@
     <img src="imagesfriend5.jpeg" alt="Friend 5">
   </div>
 
-  <h2>Life Goals</h2>
+  <h2 id="goals">Life Goals</h2>
   <span class="disney-phrase">"The flower that blooms in adversity is the most rare and beautiful of all." — Mulan</span>
   
   <p><strong>Short Term Goals:</strong></p>
